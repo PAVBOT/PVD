@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRV-1.0</title>
+    <link rel="stylesheet" href="Chatbot/home.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PRV-1.0<sup>BETA</sup></h1>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Books.html">Books</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Power.html">Power</a></li>
+                    <li><a href="bot.html">PRV-1.0</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to the PRV-1.0<sup>BETA</sup>"s Webpage</h2>
+                <p>Explore the amazing features of PRV-1.0<sup>BETA</sup>.</p>
+            </div>
+        </section>
+        <section id="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Interactive Conversations</h3>
+                        <p>PRV-1.0<sup>BETA</sup> Talks in natural and interactive conversations with the User.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Responsive Design</h3>
+                        <p>PRV-1.0<sup>BETA</sup> interface is fully responsive and works on all devices.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Seamless Integration</h3>
+                        <p>PRV-1.0<sup>BETA</sup>"S next version will launch soon.With more interactive conversations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Learn more about the team behind the PRV-1.0<sup>BETA</sup>. <a href="About.html">Read more...</a></p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for more information of PRV-1.0<sup>BETA</sup> #pavgamestudio@gmail.com.</p>
+            </div>
+        </section>
+    </main>
+    <div class="chat-container">
+        <div id="chatbox" class="chatbox" aria-live="polite">
+            <div class="bot-message">Hello! How can I assist you today?</div>
+        </div>
+        <input type="text" id="userInput" placeholder="Type your message..." aria-label="User message input">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Power studio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="Chatbot/script.js"></script>
+</body>
+</html>

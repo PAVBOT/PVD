@@ -1,0 +1,144 @@
+/* Variables for color scheme */
+:root {
+    --primary-color: #333;
+    --secondary-color: #ffa500;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-footer-bg: #333;
+    --header-footer-text: #fff;
+    --link-color: #ffa500;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--header-footer-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--link-color);
+}
+
+.toggle-button {
+    background: none;
+    border: 2px solid var(--link-color);
+    color: var(--link-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: var(--link-color);
+    color: var(--header-footer-text);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.recommended-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    text-align: center;
+    padding: 10px 0;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --primary-color: #f4f4f4;
+    --secondary-color: #ffa500;
+    --background-color: #333;
+    --text-color: #f4f4f4;
+    --header-footer-bg: #222;
+    --header-footer-text: #f4f4f4;
+    --link-color: #ffa500;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    nav ul li {
+        text-align: left;
+    }
+
+    .logo {
+        width: 120px;
+    }
+    
+    .toggle-button {
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
